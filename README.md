@@ -17,13 +17,17 @@ https://docs.circom.io/getting-started/installation/
 
 
 
-### Usage:
+## Usage:
 
+
+### Generating ZK proof by Lessor for Vendor
 Edit /packages/circuit/inputbuy.json to input cash on account of Lessor and 
 price of equipment set by Vendor and run
 
 	yarn buy
 
+Results will be in proof.json and public.json in packages/circuit, first value in public.json 
+is boolean and indicates is cash is enough to buy equipment, second value is price of equipment
 
 ## Command line tools
 
