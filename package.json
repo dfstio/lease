@@ -1,0 +1,23 @@
+{
+  "name": "@lease/monorepo",
+  "version": "1.0.0",
+  "description": "Lease and zero knowledge proofs",
+  "main": "index.js",
+  "repository": "https://github.com/Benjamin-Herald/lease",
+  "author": "Benjamin Herald",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+  	"packages": [
+   "packages/*"
+   	]
+   },
+   "scripts": {    
+	  "start": "yarn ",    
+	  "build": "yarn ",
+	  "sync": "yarn workspace @lease/cli sync",
+	  "push": "git push -u origin master",
+	  "gitcreate": "git remote add origin https://github.com/Benjamin-Herald/lease",
+	  "commit": "git commit -a -S -m"  
+   }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@lease/config",
+  "version": "1.0.0",
+  "description": "configuration",
+  "main": "config.js",
+  "author": "Benjamind Herald",
+  "license": "MIT",
+  "private": true
+}
