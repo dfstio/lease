@@ -15,7 +15,7 @@
    "scripts": {    
 	  "start": "yarn ",    
 	  "build": "yarn ",
-	  "sync": "yarn workspace @lease/cli sync",
+	  "buy": "yarn workspace @lease/circuit buy",
 	  "push": "git push -u origin master",
 	  "gitcreate": "git remote add origin https://github.com/Benjamin-Herald/lease",
 	  "commit": "git commit -a -S -m"  
