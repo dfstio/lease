@@ -24,12 +24,13 @@
     "soliditylease": "snarkjs zkey export solidityverifier lease_0001.zkey lease_verifier.sol",
     "soliditybuy": "snarkjs zkey export solidityverifier buy_0001.zkey buy_verifier.sol",
     "generatecall": "snarkjs zkesc public.json proof.json",
-    "witnesslease": "node ./lease_js/generate_witness.js ./lease_js/lease.wasm ./inputlease.json witness.wtns",
-    "witnessbuy": "node ./buy_js/generate_witness.js ./buy_js/buy.wasm ./inputbuy.json witness.wtns",
-    "prooflease": "snarkjs g16p lease_0001.zkey witness.wtns proof.json public.json",
-    "proofbuy": "snarkjs g16p buy_0001.zkey witness.wtns proof.json public.json",
-    "verifylease": "snarkjs g16v lease_verification_key.json public.json proof.json",   
-    "verifybuy": "snarkjs g16v buy_verification_key.json public.json proof.json",
-    "buy": "yarn witnessbuy && yarn proofbuy && yarn verifybuy && cat public.json" 
+    "witnesslease": "node ./lease_js/generate_witness.js ./lease_js/lease.wasm ./lessee-data.json leasewitness.wtns",
+    "witnessbuy": "node ./buy_js/generate_witness.js ./buy_js/buy.wasm ./inputbuy.json buywitness.wtns",
+    "prooflease": "snarkjs g16p lease_0001.zkey leasewitness.wtns leaseproof.json leasepublic.json",
+    "proofbuy": "snarkjs g16p buy_0001.zkey buywitness.wtns buyproof.json buypublic.json",
+    "verifylease": "snarkjs g16v lease_verification_key.json leasepublic.json leaseproof.json",   
+    "verifybuy": "snarkjs g16v buy_verification_key.json buypublic.json buyproof.json",
+    "lease": "yarn witnesslease && yarn prooflease && yarn verifylease && cat leasepublic.json",
+    "buy": "yarn witnessbuy && yarn proofbuy && yarn verifybuy && cat buypublic.json" 
   }
 }

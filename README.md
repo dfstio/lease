@@ -14,6 +14,7 @@ In case you plan to change circuit, install circom using
 https://docs.circom.io/getting-started/installation/
 
 ## Contracts
+Contracts are deployed to Rinkeby network. Faucet is located at https://rinkebyfaucet.com/
 
 
 
