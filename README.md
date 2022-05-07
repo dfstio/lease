@@ -3,7 +3,7 @@ Lease demo with zero knowledge proofs
 
 ## Configuration
 
-git clone https://github.com/Benjamin-Herald/lease
+	git clone https://github.com/Benjamin-Herald/lease
 
 Put config.js file with configuration into packages/config directory using template as example
 
