@@ -17,20 +17,25 @@ https://docs.circom.io/getting-started/installation/
 Contracts are deployed to Rinkeby network. Faucet is located at https://rinkebyfaucet.com/
 
 
-
 ## Usage:
 
-
 ### Generating ZK proof by Lessor for Vendor
-Edit /packages/circuit/inputbuy.json to input cash on account of Lessor and 
+Edit /data/lessor-data.json to input cash on account of Lessor and 
 price of equipment set by Vendor and run
 
 	yarn buy
 
-Results will be in proof.json and public.json in packages/circuit, first value in public.json 
-is boolean and indicates is cash is enough to buy equipment, second value is price of equipment
+Results will be in the data folder in buyproof.json and buypublic.json, first value in buypublic.json 
+is boolean and indicates if cash is enough to buy equipment, second value is the price of equipment
 
-## Command line tools
+### Generating ZK proof with credit rating by Lessee for Lessor
+Edit /data/lessee-data.json to input data of Lessee and run
+
+	yarn lease
+
+Results will be in the data folder in leaseproof.json and leasepublic.json, first value in leasepublic.json 
+is Lessee's credit rating, second value is the roothash of SMT of Lessee's data from lessee-data.json
+
 
 
 
