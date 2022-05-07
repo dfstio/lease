@@ -19,7 +19,9 @@ https://docs.circom.io/getting-started/installation/
 
 ### Usage:
 
-Edit /packages/circuit/inputbuy.json to input cash on account of Lessor and price of equipment set by Vendor and Run
+Edit /packages/circuit/inputbuy.json to input cash on account of Lessor and 
+price of equipment set by Vendor and run
+
 	yarn buy
 
 
