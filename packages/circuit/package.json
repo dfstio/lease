@@ -9,18 +9,27 @@
     "circomlib": "^2.0.3"
   },
     "scripts": {
-    "compile": "circom lease.circom --r1cs --wasm --sym",
+    "compilelease": "circom lease.circom --r1cs --wasm --sym",
+    "compilebuy": "circom buy.circom --r1cs --wasm --sym",
     "archive": "git archive -o lease-circuits.zip HEAD",
     "ceremony1": "snarkjs powersoftau new bn128 12 pot12_0000.ptau -v",
     "ceremony2": "snarkjs powersoftau contribute pot12_0000.ptau pot12_0001.ptau --name=FirstContribution -v",
     "ceremony3": "snarkjs powersoftau prepare phase2 pot12_0001.ptau pot12_final.ptau -v",
-    "ceremony4": "snarkjs groth16 setup lease.r1cs pot12_final.ptau lease_0000.zkey",
-    "ceremony5": "snarkjs zkey contribute lease_0000.zkey lease_0001.zkey --name=SecondContribution -v",
-    "ceremony6": "snarkjs zkey export verificationkey lease_0001.zkey lease_verification_key.json",
-    "solidity": "snarkjs zkey export solidityverifier lease_0001.zkey lease_verifier.sol",
+    "ceremony4lease": "snarkjs groth16 setup lease.r1cs pot12_final.ptau lease_0000.zkey",
+    "ceremony4buy": "snarkjs groth16 setup buy.r1cs pot12_final.ptau buy_0000.zkey",
+    "ceremony5lease": "snarkjs zkey contribute lease_0000.zkey lease_0001.zkey --name=SecondContribution -v",
+    "ceremony5buy": "snarkjs zkey contribute buy_0000.zkey buy_0001.zkey --name=SecondContribution -v",
+    "ceremony6lease": "snarkjs zkey export verificationkey lease_0001.zkey lease_verification_key.json",
+    "ceremony6buy": "snarkjs zkey export verificationkey buy_0001.zkey buy_verification_key.json",
+    "soliditylease": "snarkjs zkey export solidityverifier lease_0001.zkey lease_verifier.sol",
+    "soliditybuy": "snarkjs zkey export solidityverifier buy_0001.zkey buy_verifier.sol",
     "generatecall": "snarkjs zkesc public.json proof.json",
-    "witness": "node ./lease_js/generate_witness.js ./lease_js/lease.wasm ./input.json witness.wtns",
-    "proof": "snarkjs g16p lease_0001.zkey witness.wtns proof.json public.json",
-    "verify": "snarkjs g16v lease_verification_key.json public.json proof.json"    
+    "witnesslease": "node ./lease_js/generate_witness.js ./lease_js/lease.wasm ./inputlease.json witness.wtns",
+    "witnessbuy": "node ./buy_js/generate_witness.js ./buy_js/buy.wasm ./inputbuy.json witness.wtns",
+    "prooflease": "snarkjs g16p lease_0001.zkey witness.wtns proof.json public.json",
+    "proofbuy": "snarkjs g16p buy_0001.zkey witness.wtns proof.json public.json",
+    "verifylease": "snarkjs g16v lease_verification_key.json public.json proof.json",   
+    "verifybuy": "snarkjs g16v buy_verification_key.json public.json proof.json",
+    "buy": "yarn witnessbuy && yarn proofbuy && yarn verifybuy && cat public.json" 
   }
 }
