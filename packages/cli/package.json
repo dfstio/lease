@@ -5,7 +5,7 @@
   "author": "Benjamin Herald",
   "license": "MIT",
   "scripts": {
-    "sync": "node sync.js",
+    "application": "node application.js",
     "verify": "node verify.js",
     "archive": "git archive -o lease-cli.zip HEAD"
   },
@@ -14,6 +14,7 @@
     "circomlibjs": "^0.1.2",
     "eth-revert-reason": "^1.0.3",
     "ethers": "^5.5.1",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "keccak256": "^1.0.6"
   }
 }

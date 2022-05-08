@@ -24,7 +24,7 @@
     "soliditylease": "snarkjs zkey export solidityverifier lease_0001.zkey lease_verifier.sol",
     "soliditybuy": "snarkjs zkey export solidityverifier buy_0001.zkey buy_verifier.sol",
     "generatecall": "snarkjs zkesc public.json proof.json",
-    "witnesslease": "node ./lease_js/generate_witness.js ./lease_js/lease.wasm ../../data/lessee-data.json leasewitness.wtns",
+    "witnesslease": "node ./lease_js/generate_witness.js ./lease_js/lease.wasm ../../data/lessee-input.json leasewitness.wtns",
     "witnessbuy": "node ./buy_js/generate_witness.js ./buy_js/buy.wasm ../../data/lessor-data.json buywitness.wtns",
     "prooflease": "snarkjs g16p lease_0001.zkey leasewitness.wtns ../../data/leaseproof.json ../../data/leasepublic.json",
     "proofbuy": "snarkjs g16p buy_0001.zkey buywitness.wtns ../../data/buyproof.json ../../data/buypublic.json",

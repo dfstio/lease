@@ -16,7 +16,8 @@
 	  "start": "yarn ",    
 	  "build": "yarn ",
 	  "buy": "yarn workspace @lease/circuit buy",
-	  "lease": "yarn workspace @lease/circuit lease",
+	  "lease": "yarn application && yarn workspace @lease/circuit lease",
+	  "application": "yarn workspace @lease/cli application",
 	  "push": "git push -u origin master",
 	  "gitcreate": "git remote add origin https://github.com/Benjamin-Herald/lease",
 	  "commit": "git commit -a -S -m"  
