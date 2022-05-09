@@ -26,6 +26,8 @@ template lease()
 {
  // information about Lessee
  signal input roothash; 	// roothash of SMT holding input signals
+ signal input address;		// Ethereum address of Lessee
+ signal input time;			// time of lessee input generation
  
  signal input creditScore;  // creditScore
  var creditScoreLimits[2] = [650,800];
@@ -47,6 +49,14 @@ template lease()
  component compareRootHash = IsZero();
  compareRootHash.in <== roothash;
  compareRootHash.out === 0;
+ 
+ component compareAddress = IsZero();
+ compareAddress.in <== address;
+ compareAddress.out === 0;
+ 
+ component compareTime = IsZero();
+ compareTime.in <== time;
+ compareTime.out === 0;
 
  component compareCreditScore = compareLimits();
  compareCreditScore.value <== creditScore;
@@ -71,4 +81,4 @@ template lease()
  
 }
 
-component main {public [roothash]} = lease();
+component main {public [roothash, address, time]} = lease();

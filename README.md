@@ -15,7 +15,9 @@ https://docs.circom.io/getting-started/installation/
 
 ## Contracts
 Contracts are deployed to Rinkeby network. Faucet is located at https://rinkebyfaucet.com/
+Blockchain explorer is located at https://rinkeby.etherscan.io/
 
+LeaseVerifier deployed to: 0xa485e21B76CcF50841db2Cc31813113E26F66ec2
 
 ## Usage:
 
@@ -34,7 +36,8 @@ Edit /data/lessee-data.json to input data of Lessee and run
 	yarn lease
 
 Results will be in the data folder in leaseproof.json and leasepublic.json, first value in leasepublic.json 
-is Lessee's credit rating, second value is the roothash of SMT of Lessee's data from lessee-data.json
+is Lessee's credit rating, second value is the roothash of SMT of Lessee's data from lessee-data.json, third is 
+Lessee's Ethereum address and fourth is time
 
 
 

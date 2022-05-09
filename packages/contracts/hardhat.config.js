@@ -9,11 +9,11 @@ require('hardhat-abi-exporter');
 
 
 
-const defaultNetwork = "mumbai"; // "localhost";  "mumbai";
+const defaultNetwork = "rinkeby"; // "localhost";  "mumbai";
 const { isAddress, getAddress, formatUnits, parseUnits } = utils;
-const {KEY } = require('@list/config');
-const  privateKey  = KEY;
-//const { privateKey } = require('./private_deployer.json');
+const {KEY_OWNER, RPC_RINKEBY, RPC_MUMBAI } = require('@lease/config');
+const  privateKey  = KEY_OWNER;
+
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -66,7 +66,7 @@ module.exports = {
       */
     },
     rinkeby: {
-      url: "https://eth-rinkeby.alchemyapi.io/v2/o1zy9B4CvgTsH_dHr9nTia4ZTPypCpR0",
+      url: RPC_RINKEBY,
       //"https://rpc-mainnet.maticvigil.com/",
       chainId: 4,
       gas:"auto",
@@ -84,7 +84,7 @@ module.exports = {
       accounts: [privateKey]
     },
     mumbai: {
-      url: "https://polygon-mumbai.g.alchemy.com/v2/BwVbde2aMs_mNN8KLFIZl6037vvZMAnH", //"https://rpc-mumbai.maticvigil.com", 
+      url: RPC_MUMBAI, //"https://rpc-mumbai.maticvigil.com", 
       gas:"auto",
       gasMultiplier:2,
       forwarder:  0x4d4581c01A457925410cd3877d17b2fd4553b2C5,
