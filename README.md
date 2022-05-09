@@ -29,7 +29,10 @@ price of equipment set by Vendor and run
 	yarn buy
 
 Results will be in the data folder in buyproof.json and buypublic.json, first value in buypublic.json 
-is boolean and indicates if cash is enough to buy equipment, second value is the price of equipment
+is boolean and indicates if cash is enough to buy equipment, second value is the price of equipment.  
+
+To verify ZK proof, run  
+	yarn verifybuy
 
 ### Generating ZK proof with credit rating by Lessee for Lessor
 Edit /data/lessee-data.json to input data of Lessee and run
@@ -39,6 +42,9 @@ Edit /data/lessee-data.json to input data of Lessee and run
 Results will be in the data folder in leaseproof.json and leasepublic.json, first value in leasepublic.json 
 is Lessee's credit rating, second value is the roothash of SMT of Lessee's data from lessee-data.json, third is 
 Lessee's Ethereum address and fourth is time
+
+To verify ZK proof, run  
+	yarn verifylease
 
 
 ## NFT
