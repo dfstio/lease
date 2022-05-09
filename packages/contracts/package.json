@@ -29,6 +29,7 @@
     "compile": "hardhat compile",
     "deployl": "hardhat run --network mumbai  scripts/deploylist.js",
     "deployleaseverifier": "hardhat run --network rinkeby scripts/deployleaseverifier.js",
+    "deploybuyverifier": "hardhat run --network rinkeby scripts/deploybuyverifier.js",
     "upgradelist": "hardhat run --network mumbai scripts/upgradelist.js",
     "accounts": "hardhat accounts",
     "verifyverifier": "hardhat etherscan-verify --network rinkeby --api-key FQ1NYZXPQIICKE7U41VSRB7TPKZJQKI7SH",

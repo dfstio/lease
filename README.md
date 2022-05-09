@@ -17,7 +17,8 @@ https://docs.circom.io/getting-started/installation/
 Contracts are deployed to Rinkeby network. Faucet is located at https://rinkebyfaucet.com/
 Blockchain explorer is located at https://rinkeby.etherscan.io/
 
-LeaseVerifier deployed to: 0xa485e21B76CcF50841db2Cc31813113E26F66ec2
+LeaseVerifier deployed to: 	0xa485e21B76CcF50841db2Cc31813113E26F66ec2
+ButVerifier deployed to: 	[0xe96f6f106091E6D4Fb09850bD81687c2ca9562CA](https://rinkeby.etherscan.io/address/0xe96f6f106091E6D4Fb09850bD81687c2ca9562CA#code)
 
 ## Usage:
 
@@ -40,6 +41,9 @@ is Lessee's credit rating, second value is the roothash of SMT of Lessee's data 
 Lessee's Ethereum address and fourth is time
 
 
+## NFT
 
+Using as example https://xrgmed.com.mx/producto/logic-p9/
+https://www.ultrasoundsupply.com/products/ultrasound-machines/ge-ultrasound/ge-logiq-p9/ - USD 19000
 
 ## TODO
