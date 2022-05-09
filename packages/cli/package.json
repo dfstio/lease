@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "application": "node application.js",
-    "verify": "node verify.js",
+    "verifylease": "node verifylease.js",
+    "verifybuy": "node verifybuy.js",
     "archive": "git archive -o lease-cli.zip HEAD"
   },
   "dependencies": {

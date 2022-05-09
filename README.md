@@ -18,7 +18,7 @@ Contracts are deployed to Rinkeby network. Faucet is located at https://rinkebyf
 Blockchain explorer is located at https://rinkeby.etherscan.io/
 
 LeaseVerifier deployed to: 	[0xa485e21B76CcF50841db2Cc31813113E26F66ec2](https://rinkeby.etherscan.io/address/0xa485e21B76CcF50841db2Cc31813113E26F66ec2#code)   
-ButVerifier deployed to: 	[0xe96f6f106091E6D4Fb09850bD81687c2ca9562CA](https://rinkeby.etherscan.io/address/0xe96f6f106091E6D4Fb09850bD81687c2ca9562CA#code)
+BuyVerifier deployed to: 	[0xe96f6f106091E6D4Fb09850bD81687c2ca9562CA](https://rinkeby.etherscan.io/address/0xe96f6f106091E6D4Fb09850bD81687c2ca9562CA#code)
 
 ## Usage:
 
