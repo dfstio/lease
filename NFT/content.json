@@ -1,0 +1,13 @@
+{
+"name":"Ultrasonido LOGIQ P9",
+"type":"object",
+"image":"https://ipfs.io/ipfs/QmVRJg9N7np1hvbHHyhZG2hS6dQ8kkzDYaYzFxfhD4B7P5",
+"animation_url":"https://ipfs.io/ipfs/QmZ5rWSc9mqAStatJ8oqwwCYjYhH12WrsQNEK14PRbpr5V",
+"description":"**Price**: *USD 19000*\n\n**Características**  \nMonitor con brazo articulado: *21.5”*  \nPantalla Táctil: *10.5”*  \nPuertos activos para transductores: *4*  \nSalidas: *HDMI, Ethernet y USB*\n\n**Automatiza la eficiencia**  \nLogra la excelencia visual con los mínimos ajustes necesarios, gracias a la inmejorable resolución (espacial) y contraste del Modo B.  \n\n**Transductor Matricial**  \nEntre una amplia gama de transductores 2D y 3D avanzados, surge el T. Matricial (lineal) con una calidad excepcional en todos los tipos\nde pruebas y de pacientes. Gracias a sus 1024 Cristales y huella de 52cm, lo que te permite una definición incomparable.  \n\n**HDLive**  \nRenderización en 3D.  \n\n**Elastografía Shearwave**  \nA través de esta técnica -no invasiva- en tiempo real, mide la rigidez de cualquier tejido.\nRespetando la idea de LOGIQ P Series.\nRealiza tus estudios clínicos hasta un 32% más rápido. Reduce en un 44% el uso de teclado.  \n\n**Control Remoto**  \nPermite la operación -remota- de tu equipo, desde tu dispositivo Android™ gracias a la compatibilidad con las aplicaciones LOGIQ.\nFácil migración y procesamiento de datos compatible con DICOM, entre otras ventajas.\n",
+"time":1652134933279,
+"properties": {
+		"image":{"IPFShash":"QmVRJg9N7np1hvbHHyhZG2hS6dQ8kkzDYaYzFxfhD4B7P5","MD5_Hash":"d7b07a3b59174653059519d4c6cff835","SHA256_Hash":"0480e13713bece387737c6e11bd1224614f8558ea502302eb4c2597077e9f875","filetype":"image/png","filename":"LOGIQ-P9.png","size":66734,"lastModified":1652134415786,"url":"https://ipfs.io/ipfs/QmVRJg9N7np1hvbHHyhZG2hS6dQ8kkzDYaYzFxfhD4B7P5","name":"LOGIQ-P9","description":""},
+		"animation":{"IPFShash":"QmZ5rWSc9mqAStatJ8oqwwCYjYhH12WrsQNEK14PRbpr5V","MD5_Hash":"5bb7655fa12b735d84914c15130f369d","SHA256_Hash":"52496b933fb5d0fe597287dc06a929c311d49efb104fff7ddde34009a41ff9da","filetype":"video/mp4","filename":"LOGIQ-P9 video.mp4","size":8310993,"lastModified":1652134420847,"url":"https://ipfs.io/ipfs/QmZ5rWSc9mqAStatJ8oqwwCYjYhH12WrsQNEK14PRbpr5V","name":"LOGIQ-P9 video","description":""}
+		},
+"attributes":[{"trait_type":"Category","value":"Ultrasonido"}]
+}

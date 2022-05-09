@@ -19,7 +19,8 @@
     "hardhat-contract-sizer": "^2.5.1"
   },
   "dependencies": {
-  	"@lease/config": "1.0.0",
+    "@lease/config": "1.0.0",
+    "@openzeppelin/contracts": "^4.6.0",
     "@openzeppelin/contracts-upgradeable": "^4.5.2",
     "chalk": "^5.0.0"
   },
@@ -30,10 +31,12 @@
     "deployl": "hardhat run --network mumbai  scripts/deploylist.js",
     "deployleaseverifier": "hardhat run --network rinkeby scripts/deployleaseverifier.js",
     "deploybuyverifier": "hardhat run --network rinkeby scripts/deploybuyverifier.js",
+    "deployequipment": "hardhat run --network rinkeby scripts/deployequipment.js",
     "upgradelist": "hardhat run --network mumbai scripts/upgradelist.js",
     "accounts": "hardhat accounts",
     "verifyverifier": "hardhat etherscan-verify --network rinkeby --api-key FQ1NYZXPQIICKE7U41VSRB7TPKZJQKI7SH",
     "verifylist": "hardhat verify --network mumbai 0xbDEBAb0a14CDa02c196bDC2C2490D96d3DfC6a61",
+    "verifyequipment": "hardhat verify --network rinkeby 0x49549aD4872Bb0F487eF8947FcdFCd0Af1479B71 0xe96f6f106091E6D4Fb09850bD81687c2ca9562CA",
     "verify": "hardhat verify --network rinkeby 0x355Bd8a9898751b779Bf621650d70eEa93FD65eC",
     "test": "echo \"Error: no test specified\" && exit 1",
     "size": "hardhat size-contracts",

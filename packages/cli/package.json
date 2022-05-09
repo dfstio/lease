@@ -8,6 +8,7 @@
     "application": "node application.js",
     "verifylease": "node verifylease.js",
     "verifybuy": "node verifybuy.js",
+    "ipfs": "node ipfs.js",
     "archive": "git archive -o lease-cli.zip HEAD"
   },
   "dependencies": {
@@ -17,6 +18,7 @@
     "eth-revert-reason": "^1.0.3",
     "ethers": "^5.5.1",
     "fs": "^0.0.1-security",
+    "ipfs-http-client": "^56.0.3",
     "keccak256": "^1.0.6",
     "util": "^0.12.4"
   }

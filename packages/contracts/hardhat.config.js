@@ -11,7 +11,7 @@ require('hardhat-abi-exporter');
 
 const defaultNetwork = "rinkeby"; // "localhost";  "mumbai";
 const { isAddress, getAddress, formatUnits, parseUnits } = utils;
-const {KEY_OWNER, RPC_RINKEBY, RPC_MUMBAI } = require('@lease/config');
+const {KEY_OWNER, RPC_RINKEBY, RPC_MUMBAI, KEY_ETHERSCAN } = require('@lease/config');
 const  privateKey  = KEY_OWNER;
 
 
@@ -94,12 +94,14 @@ module.exports = {
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: "FQ1NYZXPQIICKE7U41VSRB7TPKZJQKI7SH" //"FQ1NYZXPQIICKE7U41VSRB7TPKZJQKI7SH"
+    apiKey: {
+      rinkeby: KEY_ETHERSCAN
+    }
   },
   solidity: {
     compilers: [
       {
-        version: "0.8.9",
+        version: "0.8.4",
         settings: {
           optimizer: {
             enabled: true,

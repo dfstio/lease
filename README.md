@@ -18,7 +18,9 @@ Contracts are deployed to Rinkeby network. Faucet is located at https://rinkebyf
 Blockchain explorer is located at https://rinkeby.etherscan.io/
 
 LeaseVerifier deployed to: 	[0xa485e21B76CcF50841db2Cc31813113E26F66ec2](https://rinkeby.etherscan.io/address/0xa485e21B76CcF50841db2Cc31813113E26F66ec2#code)   
-BuyVerifier deployed to: 	[0xe96f6f106091E6D4Fb09850bD81687c2ca9562CA](https://rinkeby.etherscan.io/address/0xe96f6f106091E6D4Fb09850bD81687c2ca9562CA#code)
+BuyVerifier deployed to: 	[0xe96f6f106091E6D4Fb09850bD81687c2ca9562CA](https://rinkeby.etherscan.io/address/0xe96f6f106091E6D4Fb09850bD81687c2ca9562CA#code)  
+
+Equipment deployed to [0x49549aD4872Bb0F487eF8947FcdFCd0Af1479B71](https://rinkeby.etherscan.io/address/0x49549aD4872Bb0F487eF8947FcdFCd0Af1479B71)  
 
 ## Usage:
 
@@ -55,3 +57,7 @@ Using as example https://xrgmed.com.mx/producto/logic-p9/
 https://www.ultrasoundsupply.com/products/ultrasound-machines/ge-ultrasound/ge-logiq-p9/ - USD 19000
 
 ## TODO
+- config template
+- NFT Contracts
+- Opensea link
+- Demo NFT
