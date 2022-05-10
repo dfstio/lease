@@ -1,29 +1,18 @@
-const { INFURA_IPFS_ID, INFURA_IPFS_SECRET, INFURA_IPFS_ENDPOINT } = require('@lease/config');
-const contentJSON = require("../../NFT/content.json");
-//const { BufferList } = require("bl");
+const { INFURA_IPFS_ID, INFURA_IPFS_SECRET, INFURA_IPFS_ENDPOINT, INFURA_IPFS_PORT } = require('@lease/config');
 const ipfsClient = require('ipfs-http-client');
+const { BufferList } = require("bl");
 
-const auth =
-  'Basic ' + Buffer.from(INFURA_IPFS_ID + ':' + INFURA_IPFS_SECRET).toString('base64');
+const auth = 'Basic ' + Buffer.from(INFURA_IPFS_ID + ':' + INFURA_IPFS_SECRET).toString('base64');
 
 const ipfs = ipfsClient.create({
-  host: 'ipfs.infura.io',
-  port: 5001,
+  host: INFURA_IPFS_ENDPOINT,
+  port: INFURA_IPFS_PORT,
   protocol: 'https',
   headers: {
     authorization: auth
   }
 });
 
-main();
-
-
-async function main()
-{
-	const hash = await addToIPFS(JSON.stringify(contentJSON));
-	console.log("Hash: ", hash.path);
-	console.log("URL: ", "http://ipfs.io/ipfs/" + hash.path);
-};
 
 async function addToIPFS( str )
 {
@@ -46,9 +35,10 @@ try {
     }
 };
 
-/*
+
 async function getFromIPFS( hashToGet)
 {
+	console.log("Getting data from IPFS hash", hashToGet);
 	try {
     	const content = new BufferList();
     	for await (const chunk of ipfs.cat(hashToGet)) {
@@ -60,4 +50,9 @@ async function getFromIPFS( hashToGet)
     }
  	
 };
-*/
+
+module.exports = {
+    getFromIPFS,
+    addToIPFS,
+    addFileToIPFS,
+}

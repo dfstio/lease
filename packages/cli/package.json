@@ -8,13 +8,16 @@
     "application": "node application.js",
     "verifylease": "node verifylease.js",
     "verifybuy": "node verifybuy.js",
+    "offer": "node offer.js",
+    "accept": "node accept.js",
     "buy": "node buy.js",
-    "ipfs": "node ipfs.js",
+    "ipfsuri": "node ipfsuri.js",
     "archive": "git archive -o lease-cli.zip HEAD"
   },
   "dependencies": {
     "@lease/config": "1.0.0",
     "@lease/contracts": "1.0.0",
+    "bl": "^5.0.0",
     "circomlibjs": "^0.1.2",
     "eth-revert-reason": "^1.0.3",
     "ethers": "^5.5.1",

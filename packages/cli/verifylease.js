@@ -9,10 +9,6 @@ const util = require('util')
 const exec = util.promisify(require('child_process').exec)
 
 
-
-main();
-
-
 async function main()
 {
 	 console.log('proof:', proof);
@@ -42,3 +38,11 @@ async function main()
 	 
 	 
 };
+
+
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });

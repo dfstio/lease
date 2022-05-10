@@ -2,7 +2,7 @@ const LesseeJSON = require("../../data/lessee-data.json");
 const LeaseVerifierJSON = require("../contracts/abi/contracts/lease_verifier.sol/LeaseVerifier.json");
 const {RPC_RINKEBY, KEY_LESSEE, LEASE_VERIFIER_ADDRESS } = require('@lease/config');
 const keccak256 = require('keccak256');
-const fs = require('fs');
+const fs = require('fs').promises;
 const ethers = require("ethers");
 const newMemEmptyTrie = require("circomlibjs").newMemEmptyTrie;
 
@@ -39,7 +39,7 @@ async function main()
 	 
 	 newJSON.roothash = root;
 	 //console.log("NewJSON: ", newJSON);
-	 fs.writeFile("../../data/lessee-input.json", JSON.stringify(newJSON, (_, v) => typeof v === 'bigint' ? v.toString() : v), function (err) {
+	 await fs.writeFile("../../data/lessee-input.json", JSON.stringify(newJSON, (_, v) => typeof v === 'bigint' ? v.toString() : v), function (err) {
 		   if (err) return console.log(err);
 		 });
 		 
