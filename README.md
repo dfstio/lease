@@ -56,6 +56,9 @@ To verify ZK proof, run
 Using as example https://xrgmed.com.mx/producto/logic-p9/
 https://www.ultrasoundsupply.com/products/ultrasound-machines/ge-ultrasound/ge-logiq-p9/ - USD 19000
 
+https://testnets.opensea.io/collection/equipment-9w1atiw3ed
+
+
 ## TODO
 - config template
 - NFT Contracts
