@@ -146,10 +146,12 @@ There will be minted NFT like https://testnets.opensea.io/assets/0x68db2cf0e076e
 ## NFT
 
 Using as example Ultrasonido LOGIQ P9 (USD 19000)
+
 https://xrgmed.com.mx/producto/logic-p9/
 https://www.ultrasoundsupply.com/products/ultrasound-machines/ge-ultrasound/ge-logiq-p9/
 
-Equipment NFTs: https://testnets.opensea.io/collection/equipment-9w1atiw3ed
+Equipment NFTs: https://testnets.opensea.io/collection/equipment-9w1atiw3ed  
+
 Lease NFT: https://testnets.opensea.io/assets/0x68db2cf0e076e3ddbdb66179760da4a9bb232d33/0
 
 
