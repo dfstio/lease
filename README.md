@@ -35,11 +35,11 @@ enough money by using BuyVerifier contract:
 
 ```
 	function buy(
-	uint256 tokenId,
-	uint[2] memory a,
-	uint[2][2] memory b,
-	uint[2] memory c,
-	uint[2] memory input)
+		uint256 tokenId,
+		uint[2] memory a,
+		uint[2][2] memory b,
+		uint[2] memory c,
+		uint[2] memory input)
         public
     {
     	require( input[0] == 1, "not enough money to buy"); 
