@@ -8,6 +8,7 @@
     "application": "node application.js",
     "verifylease": "node verifylease.js",
     "verifybuy": "node verifybuy.js",
+    "buy": "node buy.js",
     "ipfs": "node ipfs.js",
     "archive": "git archive -o lease-cli.zip HEAD"
   },

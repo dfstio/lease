@@ -21,6 +21,7 @@ LeaseVerifier deployed to: 	[0xa485e21B76CcF50841db2Cc31813113E26F66ec2](https:/
 BuyVerifier deployed to: 	[0xe96f6f106091E6D4Fb09850bD81687c2ca9562CA](https://rinkeby.etherscan.io/address/0xe96f6f106091E6D4Fb09850bD81687c2ca9562CA#code)  
 
 Equipment deployed to [0x49549aD4872Bb0F487eF8947FcdFCd0Af1479B71](https://rinkeby.etherscan.io/address/0x49549aD4872Bb0F487eF8947FcdFCd0Af1479B71)  
+Lease deployed to [0x68DB2cf0E076E3DDBdb66179760Da4a9BB232d33](https://rinkeby.etherscan.io/address/0x68DB2cf0E076E3DDBdb66179760Da4a9BB232d33)
 
 ## Usage:
 
