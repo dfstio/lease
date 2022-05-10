@@ -15,11 +15,14 @@
    "scripts": {    
 	  "start": "yarn ",    
 	  "build": "yarn ",
-	  "buy": "yarn workspace @lease/circuit buy",
+	  "preparebuy": "yarn workspace @lease/circuit buy",
 	  "verifybuy": "yarn workspace @lease/cli verifybuy",
-	  "lease": "yarn application && yarn workspace @lease/circuit lease",
+	  "buy": "yarn workspace @lease/cli buy",
+	  "return": "yarn workspace @lease/cli return",
+	  "preparelease": "yarn application && yarn workspace @lease/circuit lease",
 	  "verifylease": "yarn workspace @lease/cli verifylease",
-	  "application": "yarn workspace @lease/cli application",
+	  "offer": "yarn workspace @lease/cli offer",
+	  "accept": "yarn workspace @lease/cli accept",
 	  "push": "git push -u origin master",
 	  "gitcreate": "git remote add origin https://github.com/Benjamin-Herald/lease",
 	  "commit": "git commit -a -S -m"  

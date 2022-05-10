@@ -10,6 +10,7 @@
     "verifybuy": "node verifybuy.js",
     "offer": "node offer.js",
     "accept": "node accept.js",
+    "return": "node return.js",
     "buy": "node buy.js",
     "ipfsuri": "node ipfsuri.js",
     "archive": "git archive -o lease-cli.zip HEAD"
