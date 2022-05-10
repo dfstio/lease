@@ -18,7 +18,7 @@ Install [hardhat](https://hardhat.org/getting-started/#installation) that is use
 and finally clone this repo
 
 	git clone https://github.com/Benjamin-Herald/lease
-	cd Lease
+	cd lease
 	yarn
 
 Put config.js file with configuration into packages/config directory using template as example
@@ -35,11 +35,11 @@ enough money by using BuyVerifier contract:
 
 ```
 	function buy(
-			uint256 tokenId,
-			uint[2] memory a,
-			uint[2][2] memory b,
-			uint[2] memory c,
-			uint[2] memory input)
+	uint256 tokenId,
+	uint[2] memory a,
+	uint[2][2] memory b,
+	uint[2] memory c,
+	uint[2] memory input)
         public
     {
     	require( input[0] == 1, "not enough money to buy"); 
