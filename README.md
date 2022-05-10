@@ -36,10 +36,10 @@ enough money by using BuyVerifier contract:
 ```
 	function buy(
 			uint256 tokenId,
-	        uint[2] memory a,
-            uint[2][2] memory b,
-            uint[2] memory c,
-            uint[2] memory input)
+			uint[2] memory a,
+			uint[2][2] memory b,
+			uint[2] memory c,
+			uint[2] memory input)
         public
     {
     	require( input[0] == 1, "not enough money to buy"); 
@@ -61,14 +61,14 @@ Function lease on this contract creates NFT with lease terms checking ZK proof p
 
 ```
     function lease(address to, // Lessee address
-				   string memory uri, 
-				   uint256 _equipmentId,
-				   uint[2] memory a,
-				   uint[2][2] memory b,
-				   uint[2] memory c,
-				   uint[4] memory input) public 
+                   string memory uri, 
+                   uint256 _equipmentId,
+                   uint[2] memory a,
+                   uint[2][2] memory b,
+                   uint[2] memory c,
+                   uint[4] memory input) public 
 	{
-		require( equipment.ownerOf(_equipmentId) == msg.sender, "not a owner of equipment"); 
+    	require( equipment.ownerOf(_equipmentId) == msg.sender, "not a owner of equipment"); 
     	require( verifier.verifyProof(a, b, c, input) == true, "wrong proof");
     	
         uint256 tokenId = _tokenIdCounter.current();
