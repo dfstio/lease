@@ -98,7 +98,7 @@ price of equipment set by Vendor and run
 
 	yarn preparebuy
 
-Results will be in the data folder in buyproof.json and buypublic.json, first value in buypublic.json 
+Results of executing the circuit circuit/buy.circom will be in the data folder in buyproof.json and buypublic.json, first value in buypublic.json 
 is boolean and indicates if cash is enough to buy equipment, second value is the price of equipment.  
 
 To verify ZK proof (both by calling BuyVerifier contract and by using snarkjs command line tool), run  
@@ -122,7 +122,7 @@ Edit /data/lessee-data.json to input data of Lessee and run
 
 	yarn preparelease
 
-Results will be in the data folder in leaseproof.json and leasepublic.json, first value in leasepublic.json 
+Results of executing the circuit circuit/lease.circom will be in the data folder in leaseproof.json and leasepublic.json, first value in leasepublic.json 
 is Lessee's credit rating, second value is the roothash of SMT of Lessee's data from lessee-data.json, third is 
 Lessee's Ethereum address and fourth is time
 
